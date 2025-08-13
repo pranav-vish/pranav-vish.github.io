@@ -18,21 +18,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Pranav Vishwanatham
+email: pranav.vishwanath.510@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Machine Learning Engineer and AI Consultant at Yokogawa Electric Corporation.
+  Passionate about advancing AI systems towards reasoning, adaptability, and generalization.
+baseurl: # the subpath of your site, e.g. /blog
+url: "https://pranav-vish.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: pranav-vish  # Update with your GitHub username if different
+
+author:
+  name: "Pranav Vishwanatham"
+  avatar: # path to avatar image
+  bio: "ML Engineer & AI Consultant at Yokogawa Electric Corporation. Passionate about AI systems that go beyond pattern recognition."
+  location: "Tokyo, Japan"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pranav.vishwanath.510@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/pranav-vish"
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
